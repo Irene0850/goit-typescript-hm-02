@@ -18,14 +18,16 @@ const ImageCard: FC<ImageCardProps> = ({
   likes,
   description,
 }) => {
-  <div>
-    <img className={css.images} src={src} alt={alt} />
-    <div className={css.info}>
-      <p>Author: {author}</p>
-      <p>Likes: {likes}</p>
-      <p>Description: {description}</p>
+  return (
+    <div onClick={onClick}>
+      <img className={css.images} src={src} alt={alt} />
+      <div className={css.info}>
+        <p>Author: {author}</p>
+        <p>Likes: {likes}</p>
+        <p>Description: {description}</p>
+      </div>
     </div>
-  </div>;
+  );
 };
 
 export default ImageCard;
