@@ -1,6 +1,7 @@
 import Modal from "react-modal";
 import css from "./ImageModal.module.css";
 import { FC } from "react";
+import { Image } from "../../Image-api";
 
 Modal.setAppElement("#root");
 

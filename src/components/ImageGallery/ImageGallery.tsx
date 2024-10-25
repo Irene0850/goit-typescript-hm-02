@@ -1,6 +1,7 @@
 import { FC } from "react";
 import css from "./ImageGallery.module.css";
 import ImageCard from "../ImageCard/ImageCard";
+import { Image } from "../../Image-api";
 
 interface ImageGalleryProps {
   images: Image[];
