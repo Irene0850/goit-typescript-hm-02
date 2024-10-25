@@ -1,12 +1,12 @@
-import { FC } from 'react';
-import css from './ErrorMessage.module.css';
+import { FC } from "react";
+import css from "./ErrorMessage.module.css";
 
 interface ErrorMessageProps {
-    message: boolean;
+  message: boolean;
 }
 
 const ErrorMessage: FC<ErrorMessageProps> = ({ message }) => {
-    <div className={css.error}>{message}</div>
-}
+  return <div className={css.error}>{message}</div>;
+};
 
 export default ErrorMessage;
